@@ -1,19 +1,20 @@
 .FormGroup {
-	margin: 0 15px 20px;
-	padding: 50;
+	margin: 15px 500px 50px;
+	padding: 5px;
 	border-style: none;
 	background-color: #7795f8;
 	will-change: opacity, transform;
 	box-shadow: 0 6px 9px rgba(50, 50, 93, 0.06), 0 2px 5px rgba(0, 0, 0, 0.08), inset 0 1px 0 #829fff;
 	border-radius: 20px;
+    display:block;
 }
 
 .FormRow {
 	display: -ms-flexbox;
-	display: flex;
-	-ms-flex-align: center;
-	align-items: center;
-	margin-left: 50px;
+	display: block;
+	-ms-flex-align: left;
+	align-items: left;
+	margin-left: 0px;
 	border-top: 1px solid #819efc;
 }
 
@@ -22,6 +23,8 @@
 }
 
 .StripeElement {
-	width: 50%;
+	width: 40%;
 	padding: 11px 15px 11px 0;
+    display: inline-block;
+    
 }

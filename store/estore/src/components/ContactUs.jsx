@@ -18,7 +18,7 @@ function ContactUsFooter() {
     // Handle form submission (e.g., send a request to the server)
     console.log("Form data submitted:", formData);
   };
-  console.log("Works up to here");
+
 
   return (
     <footer className="contact-us">
