@@ -1,0 +1,137 @@
+#navbar {
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    padding: 5%;
+    width: 100%;
+    font-family:Gill Sans;
+    font-size: larger;
+    background-color: lightgrey;
+    transition: transform 0.3s ease-in-out;
+  
+  }
+  .logo {
+    display: block;
+    align-items: left;
+  }
+  
+  .logo img {
+    width: 70px; /* Adjust the width as needed */
+    height: 50px;
+  }
+  #footer {
+    position: relative;
+    /* bottom:0; */
+    /* width: 100%; */
+  }
+  
+  /* #social-media-icons{
+      display: flex;
+      justify-content: space-evenly !important;
+    } */
+  #productlist {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  #images{
+      height: 30vh;
+      width: 20vw; 
+      object-fit: contain;
+    }
+  
+    #product-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+    }
+    
+    /* Style the individual product items */
+    #product-item {
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      box-shadow: 0 0 10px;
+      padding: 30px;
+      margin: 20px;
+      width: 200px;
+      text-align: center;
+      transition: transform 0.3s ease-in-out;
+    }
+  
+    #product-item:hover {
+      transform: scale(1.05);
+    }
+    
+    /* Style the product image within each item */
+    #product-item img {
+      max-width: 100%;
+      height: auto;
+      transition: transform 0.3s ease-in-out;
+    }
+    #product-item:hover img {
+      transform: scale(1.1);
+    }
+    
+    /* Style other product details as needed */
+    #product-item h2 {
+      font-size: 1.2rem;
+      margin: 10px 0;
+    }
+    
+    #product-item p {
+      font-size: 1rem;
+      margin: 10px 0;
+    }
+    
+    #product-item #price {
+      font-weight: bold;
+    }
+    #product-item #title {
+      font-weight: bold;
+    }
+  
+  div {
+    text-align: center;
+    justify-content: space-evenly !important;
+  }
+  h1 {
+    font-size: 3.2em;
+    line-height: 1.1;
+    text-align: center;
+  }
+  /* body {
+      margin: 10;
+      display: flex;
+      min-width: 100%;
+      min-height: 100%;
+      padding: 2em;
+    } */
+  button:hover {
+    border-color: #646cff;
+    transform: scale(1.1);
+  }
+  button {
+    border-radius: 8px;
+    border: 3px solid rgb(15, 15, 15);
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    background-color: #906eebea;
+    cursor: pointer;
+    transition: border-color 0.25s;
+  }
+  @media (prefers-color-scheme: light) {
+    :root {
+      color: #213547;
+      background-color: #ffffff;
+    }
+    a:hover {
+      color: #747bff;
+    }
+    button {
+      background-color: #f9f9f9;
+    }
+  }
