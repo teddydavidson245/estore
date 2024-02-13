@@ -1,5 +1,6 @@
-import { AddressElement, useElements, useStripe } from "@stripe/react-stripe-js"
-import { useState } from "react"
+// eslint-disable-next-line no-unused-vars
+import { AddressElement, useElements, useStripe } from "@stripe/react-stripe-js";
+
 
 const ADDRESS_OPTIONS = {
     mode: 'shipping',
@@ -16,7 +17,7 @@ const ADDRESS_OPTIONS = {
 }
 
 export default function AddressForm() {
-    const stripe = useStripe();
+    // const stripe = useStripe();
     const elements = useElements()
 
     const handleNextStep = async () => {
@@ -34,11 +35,14 @@ export default function AddressForm() {
     }
 
     return (
+      <>
         <form onSubmit={handleSubmit}>
             <h3> Shipping </h3>
             <AddressElement onChange={handleNextStep} 
             options={ADDRESS_OPTIONS} />
-            <button type="submit">Submit</button>
+            <p> <button type="submit">Submit</button> </p>
         </form>
+        
+        </>
     )
 }
